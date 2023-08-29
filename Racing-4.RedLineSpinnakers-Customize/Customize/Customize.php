@@ -75,10 +75,11 @@
     margin: 0;
     cursor: pointer;
 }
+
 .buttonTitle{
   position: relative;
   width: 45%;
-  background-color: blue;
+  background-color: gold;
   padding: 5px;
   margin: 1.5vw 0;
   cursor: pointer;
