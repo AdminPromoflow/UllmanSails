@@ -79,7 +79,7 @@
 .buttonTitle{
   position: relative;
   width: 45%;
-  background-color: yellow;
+  background-color: #005598;
   padding: 5px;
   margin: 1.5vw 0;
   cursor: pointer;
