@@ -233,3 +233,6 @@
   var marker = L.marker([50.841011546296706, -1.3502185309655552]).addTo(map);
 
 </script>
+<script type="text/javascript">
+
+</script>
