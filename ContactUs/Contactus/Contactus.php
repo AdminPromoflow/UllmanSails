@@ -238,6 +238,29 @@
 <script type="text/javascript">
   var btnContactUs = document.getElementById('btnContactUs');
   btnContactUs.addEventListener("click",function(){
-    alert("hola");
+    var pdf_file = document.getElementById('pdf_file');
+
+    if (fileInput.files.length > 0) {
+      var file = fileInput.files[0];
+      var formData = new FormData();
+      formData.append('file', file);
+      formData.append('module', "contactUs");
+    }
+
+    $.ajax( "../App/Controller/Controller2.php", {
+    type: 'post',
+    async: false,
+    data: formData,
+    success: function(data){
+
+
+    },
+    error: function (xhr, status, error) {
+        // Maneja errores si la solicitud falla
+        alert("Error: " + status + " - " + error);
+    }
+
+  }
+)
   });
 </script>
