@@ -238,7 +238,7 @@
 <script type="text/javascript">
   var btnContactUs = document.getElementById('btnContactUs');
   btnContactUs.addEventListener("click",function(){
-    var pdf_file = document.getElementById('pdf_file');
+    var fileInput = document.getElementById('pdf_file');
 
     if (fileInput.files.length > 0) {
       var file = fileInput.files[0];
