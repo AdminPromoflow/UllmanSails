@@ -244,7 +244,11 @@
       var file = fileInput.files[0];
       var formData = new FormData();
       formData.append('file', file);
-      formData.append('module', "contactUs");
+      formData.append('module', "sendEmail");
+    }
+    else  {
+      var formData = new FormData();
+      formData.append('module', "sendEmail");
     }
 
     $.ajax( "../App/Controller/Controller2.php", {
@@ -252,7 +256,7 @@
     async: false,
     data: formData,
     success: function(data){
-
+      alert(data);
 
     },
     error: function (xhr, status, error) {

@@ -18,6 +18,9 @@ require_once('../Models/Searchs.php');
 
       echo $pages;
     }
+    elseif ($_POST['module']=="sendEmail") {
+      echo "hola";
+    }
 
 
  ?>
