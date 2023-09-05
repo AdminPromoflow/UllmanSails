@@ -239,17 +239,15 @@
   var btnContactUs = document.getElementById('btnContactUs');
   btnContactUs.addEventListener("click",function(){
     var fileInput = document.getElementById('pdf_file');
+    var formData = new FormData();
 
     if (fileInput.files.length > 0) {
-      alert("1");
       var file = fileInput.files[0];
-      var formData = new FormData();
+
       //formData.append('file', file);
       formData.append('module', "sendEmail");
     }
     else  {
-      alert("2");
-      var formData = new FormData();
       formData.append('module', "sendEmail");
     }
 
