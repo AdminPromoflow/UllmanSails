@@ -246,11 +246,11 @@
       var file = fileInput.files[0];
 
       //formData.append('file', file);
-      //formData.append('module', 'sendEmail');
+      formData.append('module', 'sendEmail');
 
     }
     else  {
-      //formData.append('module', 'sendEmail');
+      formData.append('module', 'sendEmail');
 
     }
 
