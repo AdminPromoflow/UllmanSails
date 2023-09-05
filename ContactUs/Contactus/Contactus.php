@@ -254,20 +254,16 @@
 
     }
 
-  /*  $.ajax( "../App/Controller/Controller2.php", {
+    $.ajax( "../App/Controller/Controller2.php", {
     type: 'post',
     async: false,
     data: formData,
     success: function(data){
       alert(data);
 
-    },
-    error: function (xhr, status, error) {
-        // Maneja errores si la solicitud falla
-        alert("Error: " + status + " - " + error);
     }
 
   }
-)*/
+)
   });
 </script>
