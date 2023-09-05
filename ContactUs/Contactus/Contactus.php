@@ -256,8 +256,10 @@
 
     $.ajax( "../App/Controller/Controller2.php", {
     type: 'post',
+    processData: false,
+    contentType: false,
     async: false,
-    data: {formData},
+    data: formData,
     success: function(data){
       alert(data);
 
@@ -265,5 +267,22 @@
 
   }
 )
+
+
+/*$.ajax({
+      type: 'post',
+      url: '../../controller/consultarDatos.php',
+      processData: false,
+      data: data,
+      contentType: false,
+      async: false,
+      success: function(data) {
+
+      }
+    })*/
+
+
+
+
   });
 </script>
