@@ -256,7 +256,6 @@
 
     $.ajax( "../App/Controller/Controller2.php", {
     type: 'post',
-    processData: false,
     contentType: false,
     async: false,
     data: formData,
