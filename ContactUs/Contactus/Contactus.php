@@ -257,7 +257,7 @@
     $.ajax( "../App/Controller/Controller2.php", {
     type: 'post',
     async: false,
-    data: formData,
+    data: {formData},
     success: function(data){
       alert(data);
 
