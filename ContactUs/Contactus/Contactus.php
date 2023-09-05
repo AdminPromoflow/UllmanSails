@@ -254,7 +254,7 @@
 
     }
 
-    $.ajax( "../App/Controller/Controller2.php", {
+  /*  $.ajax( "../App/Controller/Controller2.php", {
     type: 'post',
     async: false,
     data: formData,
@@ -268,6 +268,6 @@
     }
 
   }
-)
+)*/
   });
 </script>
