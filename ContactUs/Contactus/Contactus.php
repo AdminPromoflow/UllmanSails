@@ -240,15 +240,18 @@
   btnContactUs.addEventListener("click",function(){
     var fileInput = document.getElementById('pdf_file');
     var formData = new FormData();
+    
 
     if (fileInput.files.length > 0) {
       var file = fileInput.files[0];
 
       //formData.append('file', file);
-      formData.append('module', "sendEmail");
+      formData.append('module', 'sendEmail');
+
     }
     else  {
-      formData.append('module', "sendEmail");
+      formData.append('module', 'sendEmail');
+
     }
 
     $.ajax( "../App/Controller/Controller2.php", {
