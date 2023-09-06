@@ -9,7 +9,7 @@ require_once('../Models/Searchs.php');
 
 /*--------------------------------  CRUD users  ------------------------------*/
 
-
+  var_dump($_POST); // Verificar qué se recibe en $_POST
     if ($_POST['module']=="seach") {
       $db = new Database();
       $seach = new Searchs($db);
