@@ -483,7 +483,8 @@
                },
                success: function(data){
 
-                 console.log(data);
+
+                 alert(data);
                  searchContent.style.display = "block";
                  searchContent.style.minHeight = "70vh";
                  searchContent.style.padding = "2vw";
