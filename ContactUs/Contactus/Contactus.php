@@ -260,8 +260,8 @@
 
     async: false,
     data: {
-      module: "sendEmail",
-      file: file
+      module: "sendEmail"
+
     },
     success: function(data){
       alert(data);
