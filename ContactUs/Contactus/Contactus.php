@@ -256,13 +256,14 @@
 
     $.ajax( "../App/Controller/Controller2.php", {
     type: 'post',
-    //processData: false,
+    processData: false,
 
     async: false,
     data: {
       module: "sendEmail",
       file: file
     },
+      contentType: false,
     success: function(data){
       alert(data);
 
