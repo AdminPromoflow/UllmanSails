@@ -18,7 +18,7 @@ require_once('../Models/Searchs.php');
 
       echo $pages;
     }
-    else if (isset($_POST['module']) && $_POST['module'] === "sendEmail") {
+    else if ($_POST['module'] == "sendEmail") {
     echo "holaholaholahola a ver";
     }
 
