@@ -259,7 +259,10 @@
     processData: false,
 
     async: false,
-    data: formData,
+    data: {
+      module: "sendEmail",
+      file: file
+    },
     success: function(data){
       alert(data);
 
