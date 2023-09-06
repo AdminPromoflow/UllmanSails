@@ -18,9 +18,13 @@ require_once('../Models/Searchs.php');
 
       echo $pages;
     }
-    elseif ($_POST['module']=="sendEmail") {
-      echo "hola";
+    if (isset($_POST['module']) && $_POST['module'] === "sendEmail") {
+    echo "holaholaholahola a ver";
+    } else {
+      // Maneja el caso en que 'module' no se ha enviado correctamente
+    echo "El valor 'module' no se ha recibido correctamente.";
     }
+
 
 
  ?>
