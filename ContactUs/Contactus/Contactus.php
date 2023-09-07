@@ -259,9 +259,7 @@
     //processData: false,
 
     async: false,
-    data: {
-      module: "sendEmail"
-    },
+    formData: data,
       //contentType: false,
     success: function(data){
       alert(data);
