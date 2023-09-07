@@ -245,7 +245,7 @@
     if (fileInput.files.length > 0) {
       var file = fileInput.files[0];
 
-      formData.append('file', file);
+      //formData.append('file', file);
       formData.append('module', 'sendEmail');
 
     }
@@ -257,10 +257,10 @@
     $.ajax( "../App/Controller/Controller2.php", {
     type: 'post',
     processData: false,
-
+    contentType: false,
     async: false,
     data: formData,
-      //contentType: false,
+
     success: function(data){
       alert(data);
 
