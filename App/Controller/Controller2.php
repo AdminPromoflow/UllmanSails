@@ -21,6 +21,7 @@ require_once('../Models/Searchs.php');
     elseif ($_POST['module'] == "sendEmail") {
     echo "holaholaholahola a ver";
     }
+    
 
 
 
