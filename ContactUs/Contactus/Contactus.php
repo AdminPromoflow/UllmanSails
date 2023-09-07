@@ -259,7 +259,7 @@
     //processData: false,
 
     async: false,
-    formData: data,
+    data: formData,
       //contentType: false,
     success: function(data){
       alert(data);
