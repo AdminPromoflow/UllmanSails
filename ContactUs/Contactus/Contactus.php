@@ -245,7 +245,7 @@
     if (fileInput.files.length > 0) {
       var file = fileInput.files[0];
 
-      //formData.append('file', file);
+      formData.append('file', file);
       formData.append('module', 'sendEmail');
 
     }
