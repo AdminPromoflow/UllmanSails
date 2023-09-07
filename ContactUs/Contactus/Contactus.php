@@ -263,7 +263,7 @@
       module: "sendEmail",
       file: file
     },
-      contentType: false,
+    //  contentType: false,
     success: function(data){
       alert(data);
 

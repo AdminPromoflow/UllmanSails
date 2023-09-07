@@ -484,7 +484,7 @@
                success: function(data){
 
 
-                 alert(data);
+                 alert(data);/*
                  searchContent.style.display = "block";
                  searchContent.style.minHeight = "70vh";
                  searchContent.style.padding = "2vw";
@@ -500,7 +500,7 @@
                  var data = jQuery.parseJSON(data);
                  for (var i = 0; i < data.length; i++) {
                    createSearchContent(data[i]);
-                 }
+                 }*/
 
                }
              }
