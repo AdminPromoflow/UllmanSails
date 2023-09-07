@@ -260,10 +260,9 @@
 
     async: false,
     data: {
-      module: "sendEmail",
-      file: file
+      module: "sendEmail"
     },
-      contentType: false,
+      //contentType: false,
     success: function(data){
       alert(data);
 

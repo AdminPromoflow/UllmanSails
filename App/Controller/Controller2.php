@@ -9,7 +9,7 @@ require_once('../Models/Searchs.php');
 
 /*--------------------------------  CRUD users  ------------------------------*/
 
-  //var_dump($_POST); // Verificar qué se recibe en $_POST
+  var_dump($_POST); // Verificar qué se recibe en $_POST
     if ($_POST['module']=="seach") {
       $db = new Database();
       $seach = new Searchs($db);
@@ -21,7 +21,7 @@ require_once('../Models/Searchs.php');
     elseif ($_POST['module'] == "sendEmail") {
     echo "holaholaholahola a ver";
     }
-    
+
 
 
 
