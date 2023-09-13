@@ -8,8 +8,8 @@
 
        $mail = new PHPMailer;
 
-      $mail->isSMTP();
-    /*   $mail->Host = 'hostinguer.co.uk';
+    /*  $mail->isSMTP();
+       $mail->Host = 'hostinguer.co.uk';
       $mail->SMTPAuth = true;
       $mail->Username = 'sdmin@lanyardsforyou.com';
       $mail->Password = '32skiff32!CI';
