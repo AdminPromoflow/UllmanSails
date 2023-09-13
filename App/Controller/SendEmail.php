@@ -27,8 +27,8 @@
           echo 'El correo se ha enviado con éxito.';
       } else {
           echo 'Hubo un error al enviar el correo: ' . $mail->ErrorInfo;
-      }
-    }*/
+      }*/
+    }
 
   }
 
