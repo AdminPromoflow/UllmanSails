@@ -2,11 +2,9 @@
   require_once('../PHPMailer-master/src/PHPMailer.php');
 
   class SendEmail{
-    function test (){
-      echo "string";
-    }
 
-    function sendEmailContactUs (){
+
+    function sendEmailContactUs(){
 
         $mail = new PHPMailer;
 

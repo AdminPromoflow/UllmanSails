@@ -52,7 +52,7 @@ require_once('SendEmail.php');
         echo "Invalid request.";
     }
       $sendEmail = new SendEmail();
-      $sendEmail->test (); 
+      $sendEmail->sendEmailContactUs(); 
     }
 
 
