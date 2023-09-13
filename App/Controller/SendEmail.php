@@ -8,7 +8,7 @@
 
         $mail = new PHPMailer;
 
-      $mail->isSMTP();
+      /*$mail->isSMTP();
       $mail->Host = 'hostinguer.co.uk';
       $mail->SMTPAuth = true;
       $mail->Username = 'sdmin@lanyardsforyou.com';
@@ -28,7 +28,7 @@
       } else {
           echo 'Hubo un error al enviar el correo: ' . $mail->ErrorInfo;
       }
-    }
+    }*/
 
   }
 
