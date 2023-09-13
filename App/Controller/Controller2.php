@@ -5,6 +5,7 @@ session_start();
 
 require_once('../Config/database.php');
 require_once('../Models/Searchs.php');
+require_once('SendEmail.php');
 
 
 /*--------------------------------  CRUD users  ------------------------------*/
@@ -50,7 +51,8 @@ require_once('../Models/Searchs.php');
     } else {
         echo "Invalid request.";
     }
-
+      $sendEmail = new SendEmail();
+      $sendEmail->test (); 
     }
 
 
