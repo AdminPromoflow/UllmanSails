@@ -1,5 +1,11 @@
 <?php
-  require_once('../PHPMailer-master/src/PHPMailer.php');
+  use PHPMailer/PHPMailer/PHPMailer;
+  use PHPMailer/PHPMailer/Exception;
+  use PHPMailer/PHPMailer/SMTP;
+
+  require '../PHPMailer-master/src/PHPMailer.php';
+  require '../PHPMailer-master/src/Exception.php';
+  require '../PHPMailer-master/src/SMTP.php';
 
   class SendEmail{
 
@@ -9,7 +15,7 @@
        $mail = new PHPMailer;
 
     /*  $mail->isSMTP();
-       $mail->Host = 'hostinguer.co.uk';
+      $mail->Host = 'hostinguer.co.uk';
       $mail->SMTPAuth = true;
       $mail->Username = 'sdmin@lanyardsforyou.com';
       $mail->Password = '32skiff32!CI';
