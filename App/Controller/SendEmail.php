@@ -15,12 +15,12 @@
        $mail = new PHPMailer;
 
       $mail->isSMTP();
-      $mail->Host = 'hostinguer.co.uk';
+      $mail->Host = 'hostinger.co.uk';
       $mail->SMTPAuth = true;
-      $mail->Username = 'sdmin@lanyardsforyou.com';
+      $mail->Username = 'admin@lanyardsforyou.com';
       $mail->Password = '32skiff32!CI';
       $mail->SMTPSecure = 'ssl'; // Puedes usar 'ssl' o 'tls' según la configuración de tu servidor.
-      $mail->Port = 587; // Puerto SMTP
+      $mail->Port = 465; // Puerto SMTP
 
       $mail->setFrom('laurazoro@gmial.com', 'Laura Rozo');
       $mail->addAddress('lonsus30@gmail.com', 'Aleja');
