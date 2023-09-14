@@ -133,10 +133,10 @@
   <div class="contactUsContainer">
     <div class="contactUsBox">
       <h3>Your contact info</h3>
-      <input type="text" name="" placeholder="Name" value="">
-      <input type="text" name="" placeholder="Contact number" value="">
-      <input type="text" name="" placeholder="Location of Vessel (?)" value="">
-      <input type="text" name="" placeholder="Email address" value="">
+      <input id="contactName" type="text" name="" placeholder="Name" value="">
+      <input id="contactNumber" type="text" name="" placeholder="Contact number" value="">
+      <input id="contactLocation" type="text" name="" placeholder="Location of Vessel (?)" value="">
+      <input id="contactEmail" type="text" name="" placeholder="Email address" value="">
       <label for="pdf_file">Select a PDF file:</label>
       <input type="file" id="pdf_file" name="pdf_file" accept=".pdf">
       <textarea name="name" placeholder="Please share your experiences" rows="3" cols="80"></textarea>
@@ -237,6 +237,15 @@
 </script>
 <script type="text/javascript">
   var btnContactUs = document.getElementById('btnContactUs');
+  var contactName = document.getElementById('contactName');
+  var contactNumber = document.getElementById('contactNumber');
+  var contactLocation = document.getElementById('contactLocation');
+  var contactEmail = document.getElementById('contactEmail');
+
+
+
+
+
   btnContactUs.addEventListener("click",function(){
     var fileInput = document.getElementById('pdf_file');
     var formData = new FormData();
